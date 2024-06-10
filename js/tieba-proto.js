@@ -74,7 +74,7 @@ if(resStatus !== 200) {
     } else if (url.includes("excellent/personalized")) {
         console.log('贴吧-personalized');
         const argOptions = {
-            per_filter_video_thread: 0,
+            per_filter_video_thread: 1,
         };
         if (typeof $argument !== 'undefined') {
             const params = Object.fromEntries($argument.split('&').map(item => item.split('=')));
